@@ -16,36 +16,6 @@
   <link rel="stylesheet" href="./assets/css/default.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
   <link rel="stylesheet" href="./assets/css/media.css" />
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const slider = new ChiefSlider('.slider', {
-        loop: true,
-        autoplay: true,
-        interval: 5000,
-      });
-    });
-    document.addEventListener('DOMContentLoaded', function () {
-      const slider = new ChiefSlider('.slider-2', {
-        loop: true,
-        autoplay: true,
-        interval: 5000,
-      });
-    });
-    document.addEventListener('DOMContentLoaded', function () {
-      const slider = new ChiefSlider('.slider-3', {
-        loop: true,
-        autoplay: true,
-        interval: 5000,
-      });
-    });
-    document.addEventListener('DOMContentLoaded', function () {
-      const slider = new ChiefSlider('.slider-4', {
-        loop: true,
-        autoplay: true,
-        interval: 5000,
-      });
-    });
-  </script>
 </head>
 
 <body>
@@ -650,6 +620,49 @@
   <!-- /.footer -->
 
   <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/slider.js"></script>
+  <script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const tabbable = (headerSelector, tabSelector, contentSelector, activeClass) => {
+        const header = document.querySelector(headerSelector);
+        const tab = document.querySelectorAll(tabSelector);
+        const content = document.querySelectorAll(contentSelector);
+
+        function hideTabContent() {
+          content.forEach(item => {
+            item.style.display = 'none';
+          });
+          tab.forEach(item => {
+            item.classList.remove(activeClass);
+          });
+        }
+
+        function showTabContent(i = 0) {
+          content[i].style.display = 'block';
+          tab[i].classList.add(activeClass);
+        }
+
+        hideTabContent();
+        showTabContent();
+
+        header.addEventListener('click', (e) => {
+          e.preventDefault();
+          if (e.target && (e.target.classList.contains(tabSelector.replace(/\./, "")) ||
+            e.target.parentNode.classList.contains(tabSelector.replace(/\./, "")))) {
+            tab.forEach((item, i) => {
+              if (e.target == item || e.target.parentNode == item) {
+                hideTabContent();
+                showTabContent(i);
+              }
+            });
+          }
+        });
+
+      }
+      tabbable('.nav-tabs__buttons', '.nav-tabs__item', '.content-tabs__body', 'active');
+    });
+  </script>
 </body>
 
 </html>

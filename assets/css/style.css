@@ -373,9 +373,6 @@ border-bottom: solid 2px #000;
 .tabbable .tabs-items .tabs-item{
   font-size: 16px;
 }
-.tabbable .tabs-items .tabs-item:not(:first-child) {
-  display: none;
-}
 /* !END Tabbable */
 
 /* !Article-Item */

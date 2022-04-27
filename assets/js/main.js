@@ -1,46 +1,47 @@
+// Tabbable
 
 window.addEventListener("DOMContentLoaded", () => {
 
-  // Tabbable
-  const tabbable = () => {
-    const tabbs = document.querySelector('.tabbable');
-    const tabs = document.querySelectorAll('.tabs-link');
-    let content = document.querySelectorAll('.tabs-item');
+  const tabbable = (headerSelector, tabSelector, contentSelector, activeClass) => {
+    const header = document.querySelector(headerSelector);
+    const tab = document.querySelectorAll(tabSelector);
+    const content = document.querySelectorAll(contentSelector);
 
     function hideTabContent() {
-
       content.forEach(item => {
         item.style.display = 'none';
       });
-      tabs.forEach(item => {
-        item.classList.remove('active');
+      tab.forEach(item => {
+        item.classList.remove(activeClass);
       });
     }
+
     function showTabContent(i = 0) {
       content[i].style.display = 'block';
-      tabs[i].classList.add('active');
+      tab[i].classList.add(activeClass);
     }
 
     hideTabContent();
     showTabContent();
 
-    tabbs.addEventListener('click', (e) => {
+    header.addEventListener('click', (e) => {
       e.preventDefault();
-      const target = e.target;
-      if (target.classList.contains('tabs-link')) {
-
-        tabs.forEach((item, i) => {
-          if (target == item) {
+      if (e.target && (e.target.classList.contains(tabSelector.replace(/\./, "")) ||
+        e.target.parentNode.classList.contains(tabSelector.replace(/\./, "")))) {
+        tab.forEach((item, i) => {
+          if (e.target == item || e.target.parentNode == item) {
             hideTabContent();
             showTabContent(i);
           }
-
         });
       }
     });
+
   }
 
-  tabbable();
+  // tabbable('.nav-tabs__buttons', '.nav-tabs__item', '.content-tabs__body', 'active');
+  tabbable('.tabs', '.tabs-link', '.tabs-item', 'active');
+
 
 
   // Функция берет обьект по классу и обрезает его текст по условию
@@ -295,46 +296,7 @@ window.addEventListener("DOMContentLoaded", () => {
       });
     }
   };
-  const tabs = () => {
-    const header = document.querySelector('.nav-tabs');
-    const tabs = document.querySelectorAll('.nav-tabs__item');
-    let content = document.querySelectorAll('.content-tabs__body');
 
-    function hideTabContent() {
-
-      content.forEach(item => {
-        item.style.display = 'none';
-      });
-      tabs.forEach(item => {
-        item.classList.remove('active');
-      });
-    }
-    function showTabContent(i = 0) {
-      content[i].style.display = 'block';
-      tabs[i].classList.add('active');
-    }
-
-    hideTabContent();
-    showTabContent();
-
-    header.addEventListener('click', (e) => {
-      const target = e.target;
-      if (target.classList.contains('nav-tabs__item')) {
-
-        tabs.forEach((item, i) => {
-          if (target == item) {
-            hideTabContent();
-            showTabContent(i);
-          }
-
-        });
-      }
-    });
-  }
-
-  if (document.querySelector(".tabs-block")) {
-    tabs();
-  }
   if (document.querySelector(".form-popup")) {
     formPopup();
   }
@@ -348,4 +310,5 @@ window.addEventListener("DOMContentLoaded", () => {
   headerSticky();
 
   imgPopup();
+
 });
