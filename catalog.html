@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Title</title>
+
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
+  <link rel="stylesheet" href="./assets/css/fontawesome.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="./assets/css/default.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <link rel="stylesheet" href="./assets/css/slider.css" />
+  <link rel="stylesheet" href="./assets/css/media.css" />
+
+  <script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const slider = new ChiefSlider('.slider-4', {
+        loop: true,
+        autoplay: true,
+        interval: 5000,
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="ticker">
+    <div class="container">
+      <div class="ticker__inner">
+        <p class="ticker__text">
+          <span>Комплексное снабжение</span> промышленных и строительных предприятий <span>любыми</span>
+          видами <span>крепежа</span> и <span>метизов</span>
+        </p>
+        <!-- <i class="far fa-times"></i> -->
+      </div>
+    </div>
+  </div>
+  <!-- /.ticker -->
+
+  <header class="header">
+    <!-- *  Header-Top   * -->
+
+    <div class="header-top">
+      <div class="container-fl">
+        <div class="header-top__inner">
+          <!-- nav-header -->
+
+          <nav class="header__nav nav-header">
+            <div class="top-bar-mobile">
+              <span class="nav-header__title">Меню</span>
+              <span class="nav-header__close"><i class="fas fa-times"></i></span>
+            </div>
+            <a href="./product-view.html" class="button-catalog_mobile">
+              <i class="fas fa-bars"></i>
+              <span>Каталог</span>
+            </a>
+            <ul class="nav-header__list">
+              <li class="nav-header__item">
+                <i class="far fa-hospital"></i>
+                <a href="/" class="nav-header__link">Главная</a>
+              </li>
+              <li class="nav-header__item">
+                <i class="far fa-wrench"></i>
+                <a href="#" class="nav-header__link">Услуги</a>
+              </li>
+              <li class="nav-header__item">
+                <i class="fas fa-history"></i>
+                <a href="#" class="nav-header__link">Сервис и поддержка</a>
+              </li>
+              <li class="nav-header__item">
+                <i class="fas fa-truck"></i>
+                <a href="#" class="nav-header__link">Доставка</a>
+              </li>
+              <li class="nav-header__item">
+                <i class="fas fa-credit-card"></i>
+                <a href="#" class="nav-header__link">Оплата</a>
+              </li>
+              <li class="nav-header__item">
+                <i class="fas fa-map-marker-alt"></i>
+                <a href="#" class="nav-header__link">Контакты</a>
+              </li>
+            </ul>
+            <!-- contacts-header -->
+            <div class="contacts-header">
+              <ul class="contacts-header__list">
+                <li class="contacts-header__item">
+                  <a class="contacts-header__link contacts-header__link_soc" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28"
+                      height="28" viewBox="0 0 1024 1024">
+                      <defs>
+                        <path id="a"
+                          d="M1023.941 765.153c0 5.606-.171 17.766-.508 27.159-.824 22.982-2.646 52.639-5.401 66.151-4.141 20.306-10.392 39.472-18.542 55.425-9.643 18.871-21.943 35.775-36.559 50.364-14.584 14.56-31.472 26.812-50.315 36.416-16.036 8.172-35.322 14.426-55.744 18.549-13.378 2.701-42.812 4.488-65.648 5.3-9.402.336-21.564.505-27.15.505l-504.226-.081c-5.607 0-17.765-.172-27.158-.509-22.983-.824-52.639-2.646-66.152-5.4-20.306-4.142-39.473-10.392-55.425-18.542-18.872-9.644-35.775-21.944-50.364-36.56-14.56-14.584-26.812-31.471-36.415-50.314-8.174-16.037-14.428-35.323-18.551-55.744-2.7-13.378-4.487-42.812-5.3-65.649-.334-9.401-.503-21.563-.503-27.148l.08-504.228c0-5.607.171-17.766.508-27.159.825-22.983 2.646-52.639 5.401-66.151 4.141-20.306 10.391-39.473 18.542-55.426C34.154 93.24 46.455 76.336 61.07 61.747c14.584-14.559 31.472-26.812 50.315-36.416 16.037-8.172 35.324-14.426 55.745-18.549 13.377-2.701 42.812-4.488 65.648-5.3 9.402-.335 21.565-.504 27.149-.504l504.227.081c5.608 0 17.766.171 27.159.508 22.983.825 52.638 2.646 66.152 5.401 20.305 4.141 39.472 10.391 55.425 18.542 18.871 9.643 35.774 21.944 50.363 36.559 14.559 14.584 26.812 31.471 36.415 50.315 8.174 16.037 14.428 35.323 18.551 55.744 2.7 13.378 4.486 42.812 5.3 65.649.335 9.402.504 21.564.504 27.15l-.082 504.226z" />
+                      </defs>
+                      <linearGradient id="b" gradientUnits="userSpaceOnUse" x1="512.001" y1=".978" x2="512.001"
+                        y2="1025.023">
+                        <stop offset="0" stop-color="#61fd7d" />
+                        <stop offset="1" stop-color="#2bb826" />
+                      </linearGradient>
+                      <use xlink:href="#a" overflow="visible" fill="url(#b)" />
+                      <g>
+                        <path fill="#FFF"
+                          d="M783.302 243.246c-69.329-69.387-161.529-107.619-259.763-107.658-202.402 0-367.133 164.668-367.214 367.072-.026 64.699 16.883 127.854 49.017 183.522l-52.096 190.229 194.665-51.047c53.636 29.244 114.022 44.656 175.482 44.682h.151c202.382 0 367.128-164.688 367.21-367.094.039-98.087-38.121-190.319-107.452-259.706zM523.544 808.047h-.125c-54.767-.021-108.483-14.729-155.344-42.529l-11.146-6.612-115.517 30.293 30.834-112.592-7.259-11.544c-30.552-48.579-46.688-104.729-46.664-162.379.066-168.229 136.985-305.096 305.339-305.096 81.521.031 158.154 31.811 215.779 89.482s89.342 134.332 89.312 215.859c-.066 168.243-136.984 305.118-305.209 305.118zm167.415-228.515c-9.177-4.591-54.286-26.782-62.697-29.843-8.41-3.062-14.526-4.592-20.645 4.592-6.115 9.182-23.699 29.843-29.053 35.964-5.352 6.122-10.704 6.888-19.879 2.296-9.176-4.591-38.74-14.277-73.786-45.526-27.275-24.319-45.691-54.359-51.043-63.543-5.352-9.183-.569-14.146 4.024-18.72 4.127-4.109 9.175-10.713 13.763-16.069 4.587-5.355 6.117-9.183 9.175-15.304 3.059-6.122 1.529-11.479-.765-16.07-2.293-4.591-20.644-49.739-28.29-68.104-7.447-17.886-15.013-15.466-20.645-15.747-5.346-.266-11.469-.322-17.585-.322s-16.057 2.295-24.467 11.478-32.113 31.374-32.113 76.521c0 45.147 32.877 88.764 37.465 94.885 4.588 6.122 64.699 98.771 156.741 138.502 21.892 9.45 38.982 15.094 52.308 19.322 21.98 6.979 41.982 5.995 57.793 3.634 17.628-2.633 54.284-22.189 61.932-43.615 7.646-21.427 7.646-39.791 5.352-43.617-2.294-3.826-8.41-6.122-17.585-10.714z" />
+                      </g>
+                    </svg>
+                    <span>WhatsApp</span>
+                  </a>
+                </li>
+                <li class="contacts-header__item">
+                  <a class="contacts-header__link contacts-header__link_soc" href="#">
+                    <svg height="28" viewBox="0 0 512 512" width="28" xmlns="http://www.w3.org/2000/svg">
+                      <rect height="512" rx="64" ry="64" width="512" fill="#7b519d" />
+                      <g fill="#fff" fill-rule="evenodd">
+                        <path
+                          d="M421.915 345.457c-12.198-9.82-25.233-18.634-38.064-27.638-25.59-17.973-48.996-19.37-68.091 9.546-10.723 16.234-25.734 16.945-41.43 9.823-43.27-19.62-76.683-49.85-96.255-93.83-8.658-19.458-8.544-36.903 11.713-50.665 10.725-7.278 21.53-15.89 20.666-31.793-1.128-20.736-51.475-90.033-71.357-97.347-8.227-3.027-16.42-2.83-24.79-.017-46.62 15.678-65.93 54.019-47.437 99.417 55.17 135.442 152.26 229.732 285.91 287.282 7.62 3.277 16.085 4.587 20.371 5.763 30.428.306 66.073-29.01 76.367-58.104 9.911-27.99-11.035-39.1-27.603-52.437zM272.06 77.439c97.707 15.025 142.768 61.485 155.21 159.895 1.154 9.09-2.232 22.768 10.737 23.02 13.554.259 10.288-13.217 10.402-22.316 1.146-92.684-79.669-178.606-173.524-181.774-7.081 1.019-21.733-4.883-22.647 10.988-.609 10.7 11.727 8.942 19.822 10.187z" />
+                        <path
+                          d="M291.172 104.422c-9.398-1.132-21.805-5.56-24.001 7.48-2.293 13.687 11.535 12.297 20.42 14.286 60.346 13.487 81.358 35.451 91.294 95.311 1.451 8.727-1.432 22.31 13.399 20.059 10.991-1.674 7.021-13.317 7.94-20.118.487-57.47-48.758-109.778-109.052-117.018z" />
+                        <path
+                          d="M296.713 151.416c-6.273.155-12.43.834-14.736 7.538-3.463 10.02 3.822 12.409 11.237 13.6 24.755 3.974 37.783 18.571 40.256 43.257.668 6.7 4.92 12.129 11.392 11.365 8.969-1.07 9.78-9.053 9.505-16.634.443-27.734-30.904-59.79-57.654-59.126z" />
+                      </g>
+                    </svg>
+                    <span>Viber</span>
+                  </a>
+                </li>
+                <li class="contacts-header__item">
+                  <a class="contacts-header__link" href="#">+7 (910)220-00-53</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.contacts-header -->
+          </nav>
+          <!-- /.nav-header -->
+        </div>
+      </div>
+    </div>
+
+    <!-- *  End Header-Top   * -->
+
+    <!-- *  Middle-bar  * -->
+
+    <div class="middle-bar">
+      <div class="container-fl">
+        <div class="middle-bar__inner">
+          <span class="nav-header-burger"><i class="fas fa-bars"></i></span>
+          <!-- logo -->
+          <a href="./index.html" class="logo">
+            <img src="./assets/img/logo-112x73-234x140.png" alt="logo" />
+          </a>
+          <!-- /.logo -->
+          <!-- button-catalog -->
+          <a href="./catalog.html" class="button-catalog">
+            <i class="fas fa-bars"></i>
+            <span>Каталог</span>
+          </a>
+          <!-- button-catalog -->
+          <!-- form-search -->
+          <form class="middle-bar__form form-middle">
+            <div class="form-middle__group">
+              <input type="text" class="form-middle__input" placeholder="Введите название или артикул товара.." />
+              <button class="form-middle__btn">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </form>
+          <!-- /.form-search -->
+          <div class="middle-bar__links">
+            <a href="#" class="middle-bar__link">
+              <i class="far fa-phone"></i>
+              <span>8 800 101-90-53</span>
+            </a>
+            <a href="#" class="middle-bar__link">
+              <i class="far fa-envelope"></i>
+              <span>400053@list.ru</span>
+            </a>
+            <button class="button-search-mobile">
+              <i class="far fa-search"></i>
+            </button>
+          </div>
+          <div class="middle-cart">
+            <a href="#">
+              <i class="far fa-shopping-cart"></i>
+            </a>
+            <span class="middle-cart__num">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- *  End Middle-bar  * -->
+  </header>
+  <!-- /.header -->
+
+  <nav class="crumbs">
+    <div class="container">
+      <div class="crumbs__inner">
+        <span>Главная</span> /
+        <span>Каталог</span>
+      </div>
+    </div>
+  </nav>
+  <!-- /.crumbs -->
+
+  <div class="main">
+    <div class="container">
+      <div class="main__inner">
+        <div class="sidebar">
+
+          <!-- .products-menu -->
+          <div class="products-menu">
+            <ul class="products-menu__list">
+              <li class="products-menu__item">
+                <a href="#" class="products-menu__link">
+                  <img src="./assets/img/icons/vint333.png" alt="">
+                  Винты
+                </a>
+                <ul class="products-menu__sub-menu">
+                  <li>
+                    <img src="./assets/img/icons/vint333.png" alt="">
+                    <a href="#">Винты и гайки</a>
+                  </li>
+                  <li>
+                    <img src="./assets/img/icons/vint333.png" alt="">
+                    <a href="#">Винты и гайки</a>
+                  </li>
+                  <li>
+                    <img src="./assets/img/icons/vint333.png" alt="">
+                    <a href="#">Винты и гайки</a>
+                  </li>
+                  <li>
+                    <img src="./assets/img/icons/vint333.png" alt="">
+                    <a href="#">Винты и гайки</a>
+                  </li>
+                  <li>
+                    <img src="./assets/img/icons/vint333.png" alt="">
+                    <a href="#">Винты и гайки</a>
+                  </li>
+                  <li>
+                    <img src="./assets/img/icons/vint333.png" alt="">
+                    <a href="#">Винты и гайки</a>
+                  </li>
+                  <li>
+                    <img src="./assets/img/icons/vint333.png" alt="">
+                    <a href="#">Винты и гайки</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="products-menu__item">
+                <a href="#" class="products-menu__link">
+                  <img src="./assets/img/icons/vint333.png" alt="">
+                  Винты
+                </a>
+                <ul class="products-menu__sub-menu">
+                  <li>
+                    <img src="./assets/img/icons/vint333.png" alt="">
+                    <a href="#">Винты и гайки</a>
+                  </li>
+                  <li>
+                    <img src="./assets/img/icons/vint333.png" alt="">
+                    <a href="#">Винты и гайки</a>
+                  </li>
+                  <li>
+                    <img src="./assets/img/icons/vint333.png" alt="">
+                    <a href="#">Винты и гайки</a>
+                  </li>
+                  <li>
+                    <img src="./assets/img/icons/vint333.png" alt="">
+                    <a href="#">Винты и гайки</a>
+                  </li>
+                  <li>
+                    <img src="./assets/img/icons/vint333.png" alt="">
+                    <a href="#">Винты и гайки</a>
+                  </li>
+                  <li>
+                    <img src="./assets/img/icons/vint333.png" alt="">
+                    <a href="#">Винты и гайки</a>
+                  </li>
+                  <li>
+                    <img src="./assets/img/icons/vint333.png" alt="">
+                    <a href="#">Винты и гайки</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="products-menu__item">
+                <a href="#" class="products-menu__link">
+                  <img src="./assets/img/icons/vint333.png" alt="">
+                  Винты
+                </a>
+                <ul class="products-menu__sub-menu">
+                  <li>
+                    <img src="./assets/img/icons/vint333.png" alt="">
+                    <a href="#">Винты и гайки</a>
+                  </li>
+                  <li>
+                    <img src="./assets/img/icons/vint333.png" alt="">
+                    <a href="#">Винты и гайки</a>
+                  </li>
+                  <li>
+                    <img src="./assets/img/icons/vint333.png" alt="">
+                    <a href="#">Винты и гайки</a>
+                  </li>
+                  <li>
+                    <img src="./assets/img/icons/vint333.png" alt="">
+                    <a href="#">Винты и гайки</a>
+                  </li>
+                  <li>
+                    <img src="./assets/img/icons/vint333.png" alt="">
+                    <a href="#">Винты и гайки</a>
+                  </li>
+                  <li>
+                    <img src="./assets/img/icons/vint333.png" alt="">
+                    <a href="#">Винты и гайки</a>
+                  </li>
+                  <li>
+                    <img src="./assets/img/icons/vint333.png" alt="">
+                    <a href="#">Винты и гайки</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="products-menu__item">
+                <a href="#" class="products-menu__link">
+                  <img src="./assets/img/icons/vint333.png" alt="">
+                  Винты
+                </a>
+                <ul class="products-menu__sub-menu">
+                  <li>
+                    <img src="./assets/img/icons/vint333.png" alt="">
+                    <a href="#">Винты и гайки</a>
+                  </li>
+                  <li>
+                    <img src="./assets/img/icons/vint333.png" alt="">
+                    <a href="#">Винты и гайки</a>
+                  </li>
+                  <li>
+                    <img src="./assets/img/icons/vint333.png" alt="">
+                    <a href="#">Винты и гайки</a>
+                  </li>
+                  <li>
+                    <img src="./assets/img/icons/vint333.png" alt="">
+                    <a href="#">Винты и гайки</a>
+                  </li>
+                  <li>
+                    <img src="./assets/img/icons/vint333.png" alt="">
+                    <a href="#">Винты и гайки</a>
+                  </li>
+                  <li>
+                    <img src="./assets/img/icons/vint333.png" alt="">
+                    <a href="#">Винты и гайки</a>
+                  </li>
+                  <li>
+                    <img src="./assets/img/icons/vint333.png" alt="">
+                    <a href="#">Винты и гайки</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <a href="#" class="products-menu__btn-all">
+              <span>Показать все</span>
+              <i class="far fa-arrow-right"></i>
+            </a>
+          </div>
+          <!-- /.products-menu -->
+
+          <!--
+            Aside-Filter
+            При клике по тегу LI с классом  aside-filter__item
+            он становится активным и ему добовляется класс 'active' а так-же data-atribut="текст пункта li"
+           -->
+          <div class="aside-filter">
+            <h3 class="aside-filter__title">Производство</h3>
+            <ul class="aside-filter__list">
+              <li class="aside-filter__item">
+                Название1
+              </li>
+              <li class="aside-filter__item">
+                Название2
+              </li>
+              <li class="aside-filter__item">
+                Название3
+              </li>
+              <li class="aside-filter__item">
+                Название4
+              </li>
+              <li class="aside-filter__item">
+                Название5
+              </li>
+            </ul>
+          </div>
+          <!-- /.aside-filter -->
+
+          <div class="aside-filter">
+            <h3 class="aside-filter__title">Материал</h3>
+            <ul class="aside-filter__list">
+              <li class="aside-filter__item">
+                Название1
+              </li>
+              <li class="aside-filter__item">
+                Название2
+              </li>
+              <li class="aside-filter__item">
+                Название3
+              </li>
+              <li class="aside-filter__item">
+                Название4
+              </li>
+              <li class="aside-filter__item">
+                Название5
+              </li>
+            </ul>
+          </div>
+          <!-- /.aside-filter -->
+
+        </div>
+        <!-- /.sidebar -->
+        <div class="work-area">
+          <div class="content">
+            <h2 class="page-title">Категории</h2>
+
+            <div class="list-catigories">
+              <a href="#" class="single-catigory" title="Перейти к гайкам">
+                <img src="./assets/img/products/gaiki.jpg" alt="product" class="single-catigory__img" />
+                <h3 class="single-catigory__title">Гайки</h3>
+              </a>
+              <a href="#" class="single-catigory">
+                <img src="./assets/img/products/gaiki.jpg" alt="product" class="single-catigory__img" />
+                <h3 class="single-catigory__title">Гайки</h3>
+              </a>
+              <a href="#" class="single-catigory">
+                <img src="./assets/img/products/gaiki.jpg" alt="product" class="single-catigory__img" />
+                <h3 class="single-catigory__title">Гайки</h3>
+              </a>
+              <a href="#" class="single-catigory">
+                <img src="./assets/img/products/gaiki.jpg" alt="product" class="single-catigory__img" />
+                <h3 class="single-catigory__title">Гайки</h3>
+              </a>
+              <a href="#" class="single-catigory">
+                <img src="./assets/img/products/gaiki.jpg" alt="product" class="single-catigory__img" />
+                <h3 class="single-catigory__title">Гайки</h3>
+              </a>
+              <a href="#" class="single-catigory">
+                <img src="./assets/img/products/gaiki.jpg" alt="product" class="single-catigory__img" />
+                <h3 class="single-catigory__title">Гайки</h3>
+              </a>
+              <a href="#" class="single-catigory">
+                <img src="./assets/img/products/gaiki.jpg" alt="product" class="single-catigory__img" />
+                <h3 class="single-catigory__title">Гайки</h3>
+              </a>
+              <a href="#" class="single-catigory">
+                <img src="./assets/img/products/gaiki.jpg" alt="product" class="single-catigory__img" />
+                <h3 class="single-catigory__title">Гайки</h3>
+              </a>
+              <a href="#" class="single-catigory">
+                <img src="./assets/img/products/gaiki.jpg" alt="product" class="single-catigory__img" />
+                <h3 class="single-catigory__title">Гайки</h3>
+              </a>
+            </div>
+            <!-- /.list-catigories -->
+          </div>
+        </div>
+        <!-- /.wrapper -->
+      </div>
+    </div>
+    <!-- slider-categories -->
+    <section class="section">
+      <div class="container">
+        <div class="slider-categories__inner">
+          <div class="slider-4">
+            <div class="slider__container">
+              <div class="slider__wrapper">
+                <div class="slider__items">
+                  <div class="slider__item">
+                    <a href="#">
+                      <div class="card-primary">
+                        <div class="card-primary__body">
+                          <div class="card-primary__img"><img src="./assets/img/products/gaiki.jpg" alt="card-primary">
+                          </div>
+                          <h5 class="card-primary__title">Болты</h5>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="slider__item">
+                    <a href="#">
+                      <div class="card-primary">
+                        <div class="card-primary__body">
+                          <div class="card-primary__img"><img src="./assets/img/products/gaiki.jpg" alt="card-primary">
+                          </div>
+                          <h5 class="card-primary__title">Болты</h5>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="slider__item">
+                    <a href="#">
+                      <div class="card-primary">
+                        <div class="card-primary__body">
+                          <div class="card-primary__img"><img src="./assets/img/products/gaiki.jpg" alt="card-primary">
+                          </div>
+                          <h5 class="card-primary__title">Болты</h5>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="slider__item">
+                    <a href="#">
+                      <div class="card-primary">
+                        <div class="card-primary__body">
+                          <div class="card-primary__img"><img src="./assets/img/products/gaiki.jpg" alt="card-primary">
+                          </div>
+                          <h5 class="card-primary__title">Болты</h5>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="slider__item">
+                    <a href="#">
+                      <div class="card-primary">
+                        <div class="card-primary__body">
+                          <div class="card-primary__img"><img src="./assets/img/products/gaiki.jpg" alt="card-primary">
+                          </div>
+                          <h5 class="card-primary__title">Болты</h5>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="slider__item">
+                    <a href="#">
+                      <div class="card-primary">
+                        <div class="card-primary__body">
+                          <div class="card-primary__img"><img src="./assets/img/products/gaiki.jpg" alt="card-primary">
+                          </div>
+                          <h5 class="card-primary__title">Болты</h5>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="slider__control" data-slide="prev">
+              <i class="fas fa-chevron-left"></i>
+            </a>
+            <a href="#" class="slider__control" data-slide="next">
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- /.slider-categories -->
+  </div>
+  <!-- /.main -->
+  <!-- tab-mini -->
+  <section class="tab-mini-wrapper">
+    <div class="container">
+      <div class="tab-mini">
+        <ul class="tab-mini__nav">
+          <li class="tab-mini__btn tab-mini__btn-active">Недавно промотренные</li>
+        </ul>
+        <div class="tab-mini__contents">
+          <div class="tab-mini__body tab-mini__body-active">
+
+            <!-- * CARD-SMALL * -->
+            <a href="#">
+              <div class="card-small">
+                <div class="card-small__img">
+                  <img src="./assets/img/products/sr_w1-120x120.jpg" alt="60X60">
+                </div>
+                <div class="card-small__body">
+                  <span class="card-small__title">Химический анкер</span>
+                  <div class="card-small__stars">
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <div class="card-small__links">
+                    <a href="#" class="card-small__link"><i class="far fa-shopping-bag"></i></a>
+                    <a href="#" class="card-small__link"><i class="far fa-heart"></i></a>
+                    <a href="#" class="card-small__link"><i class="far fa-sliders-h"></i></a>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- * END CARD-SMALL * -->
+
+            <!-- * CARD-SMALL * -->
+            <a href="#">
+              <div class="card-small">
+                <div class="card-small__img">
+                  <img src="./assets/img/products/sr_w1-120x120.jpg" alt="60X60">
+                </div>
+                <div class="card-small__body">
+                  <span class="card-small__title">Химический анкер</span>
+                  <div class="card-small__stars">
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <div class="card-small__links">
+                    <a href="#" class="card-small__link"><i class="far fa-shopping-bag"></i></a>
+                    <a href="#" class="card-small__link"><i class="far fa-heart"></i></a>
+                    <a href="#" class="card-small__link"><i class="far fa-sliders-h"></i></a>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- * END CARD-SMALL * -->
+
+            <!-- * CARD-SMALL * -->
+            <a href="#">
+              <div class="card-small">
+                <div class="card-small__img">
+                  <img src="./assets/img/products/sr_w1-120x120.jpg" alt="60X60">
+                </div>
+                <div class="card-small__body">
+                  <span class="card-small__title">Химический анкер</span>
+                  <div class="card-small__stars">
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <div class="card-small__links">
+                    <a href="#" class="card-small__link"><i class="far fa-shopping-bag"></i></a>
+                    <a href="#" class="card-small__link"><i class="far fa-heart"></i></a>
+                    <a href="#" class="card-small__link"><i class="far fa-sliders-h"></i></a>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- * END CARD-SMALL * -->
+
+            <!-- * CARD-SMALL * -->
+            <a href="#">
+              <div class="card-small">
+                <div class="card-small__img">
+                  <img src="./assets/img/products/sr_w1-120x120.jpg" alt="60X60">
+                </div>
+                <div class="card-small__body">
+                  <span class="card-small__title">Химический анкер</span>
+                  <div class="card-small__stars">
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <div class="card-small__links">
+                    <a href="#" class="card-small__link"><i class="far fa-shopping-bag"></i></a>
+                    <a href="#" class="card-small__link"><i class="far fa-heart"></i></a>
+                    <a href="#" class="card-small__link"><i class="far fa-sliders-h"></i></a>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- * END CARD-SMALL * -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- /.tab-mini -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="column">
+          <div class="logo">
+            <a href="/">
+              <img src="./assets/img/logo.png" alt="logo" />
+            </a>
+          </div>
+          <b>г. Белгород, ул. Рабочая, д. 2Д, <br />
+            офис 21</b>
+          <ul class="list-icons">
+            <li>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-skype"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="column">
+          <h5 class="title">О компании</h5>
+          <ul class="list-unstylid">
+            <li><a href="#">Конфиденциальность</a></li>
+            <li><a href="#">Персональные данные</a></li>
+            <li><a href="#">Гарантии возврата</a></li>
+            <li><a href="#">Обратная связь</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h5 class="title">Информация</h5>
+          <ul class="list-unstylid">
+            <li><a href="#">Полезные статьи</a></li>
+            <li><a href="#">Каталог товаров</a></li>
+            <li><a href="#">Таблица DIN и ГОСТ</a></li>
+            <li><a href="#">Производство</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h5 class="title">Новостная рассылка</h5>
+          <p class="info-text">
+            Оповещаем о новинках и акциях. <br />
+            Без рекламы и спама.
+          </p>
+          <form action="" class="form-horizontal">
+            <div class="input-group">
+              <input class="input" type="text" placeholder="Введите Ваш  E-mail" />
+              <button class="btn">Отправить</button>
+            </div>
+            <div class="checkbox">
+              <label class="label">
+                <input type="checkbox" class="check" />
+                Мною прочитаны и я даю согласие с документом <br />
+                <a href="#"><strong>Политика безопасности</strong> </a>
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="copyrign">
+      <div class="container">
+        <div class="copyrign__inner">
+          <span>Copyright &copy; 2021, Промышленный и строительный крепеж</span>
+          <ul class="list-icons">
+            <li><i class="fab fa-cc-visa"></i></li>
+            <li><i class="fab fa-cc-mastercard"></i></li>
+            <li><i class="fab fa-cc-paypal"></i></li>
+            <li><i class="fab fa-cc-amex"></i></li>
+            <li><i class="fab fa-cc-discover"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/slider.js"></script>
+</body>
+
+</html>

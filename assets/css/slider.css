@@ -1,0 +1,121 @@
+/*!
+* chiefSlider
+*   site: https://itchief.ru/javascript/slider
+*   github: https://github.com/itchief/ui-components
+*
+* Copyright 2018-2021 Alexander Maltsev
+* Licensed under MIT (https://github.com/itchief/ui-components/blob/master/LICENSE)
+*/
+
+.slider {
+  position: relative;
+  width: 100%;
+}
+
+.slider__container {
+  overflow: hidden;
+}
+
+.slider__wrapper {
+  /*overflow: hidden;*/
+}
+
+.slider__items {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slider_disable-transition {
+  transition: none;
+}
+
+.slider__item {
+  flex: 0 0 100%;
+  max-width: 100%;
+  user-select: none;
+}
+
+/* кнопки влево и вправо */
+
+.slider__control {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  color: #fff;
+  text-align: center;
+  height: 50px;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.slider__control_hide {
+  display: none;
+}
+
+.slider__control[data-slide="prev"] {
+  left: 0;
+}
+
+.slider__control[data-slide="next"] {
+  right: 0;
+}
+
+/* .slider__control:hover,
+.slider__control:focus {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  background: rgba(0, 0, 0, 0.3);
+} */
+
+.slider__control::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+/* .slider__control[data-slide='prev']::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.slider__control[data-slide='next']::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+} */
+
+/* индикаторы */
+
+.slider__indicators {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-right: 20px;
+}
+
+.slider__indicators li {
+  width: 30px;
+  height: 4px;
+  border-radius: 3px;
+  background: #000;
+  cursor: pointer;
+  background: #fff;
+  box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d;
+  font-size: 0;
+}
+.slider__indicators li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.slider__indicators li.active {
+  background: #3a57ac;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
