@@ -1,8 +1,11 @@
-// Tabbable
 
-window.addEventListener("DOMContentLoaded", () => {
-
-  const tabbable = (headerSelector, tabSelector, contentSelector, activeClass) => {
+// Tabs
+class Tabs {
+  constructor(headerSelector, tabSelector, contentSelector, activeClass) {
+    this.headerSelector = headerSelector;
+    this.tabSelector = tabSelector;
+    this.contentSelector = contentSelector;
+    this.activeClass = activeClass;
     const header = document.querySelector(headerSelector);
     const tab = document.querySelectorAll(tabSelector);
     const content = document.querySelectorAll(contentSelector);
@@ -36,13 +39,10 @@ window.addEventListener("DOMContentLoaded", () => {
         });
       }
     });
-
   }
+}
 
-  // tabbable('.nav-tabs__buttons', '.nav-tabs__item', '.content-tabs__body', 'active');
-  tabbable('.tabs', '.tabs-link', '.tabs-item', 'active');
-
-
+window.addEventListener("DOMContentLoaded", () => {
 
   // Функция берет обьект по классу и обрезает его текст по условию
   let cropText = function () {
@@ -59,6 +59,18 @@ window.addEventListener("DOMContentLoaded", () => {
 
   }
   cropText()
+
+
+
+
+
+
+
+
+
+
+
+
 
   let filterAside = function () {
     let filterlist = document.querySelectorAll('.aside-filter__list');
@@ -235,12 +247,8 @@ window.addEventListener("DOMContentLoaded", () => {
       });
 
     });
-
-
-
-
-
   }
+
   let select = function () {
     let select = document.querySelectorAll('.select');
     let selectOptions = document.querySelectorAll('.select__option');
@@ -265,7 +273,11 @@ window.addEventListener("DOMContentLoaded", () => {
   const subMenu = () => {
     const menu = document.querySelector(".products-menu");
     const submenu = document.querySelector(".products-menu__sub-menu");
-
+    submenuLink.forEach(item => {
+      if (item.parentElement.closest('.products-menu__sub-menu')) {
+        item.classList.remove('products-menu__link');
+      }
+    });
     menu.addEventListener("mouseover", (e) => {
       if (e.target.className == "products-menu__link") {
         let submenu = e.target.parentNode.querySelector(
