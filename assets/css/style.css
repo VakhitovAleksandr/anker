@@ -45,6 +45,7 @@ h6.strong {
   flex-direction: column;
   gap: 20px;
 }
+
 /* *Header Style */
 
 .header {
@@ -221,10 +222,12 @@ h6.strong {
   align-items: center;
   justify-content: space-between;
 }
-.aside-filter__name{
+
+.aside-filter__name {
   transition: none;
   color: inherit;
 }
+
 .aside-filter__item.active {
   background: #428bca;
   color: #fff;
@@ -251,58 +254,64 @@ h6.strong {
 }
 
 
-
-.list-catigories {
+/* !Category-List */
+.category-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-}
-
-
-.list-catigories {
   margin: 0 -15px;
 }
 
-.single-catigory {
+.category-list .category-list-item {
   position: relative;
   text-align: center;
   overflow: hidden;
   border-radius: 15px;
   background: #fff;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 calc(33.333% - 30px);
-  flex: 0 0 calc(33.333% - 30px);
-  max-width: 33.333%;
+
+  flex-basis:calc(25% - 30px);
   margin: 15px;
+  transition: .2s;
 }
 
-.single-catigory__img {
-  max-height: 112px;
+.category-list .category-list-item a {
+  display: block;
+  padding-bottom: 20px;
 }
 
-.single-catigory__title {
+.category-list .category-list-item .img {
+  height: 112px;
+  overflow: hidden;
+}
+
+.category-list .category-list-item .img img{
+  height: 100%;
+  transition: .2s;
+}
+
+.category-list .category-list-item .title {
   font-size: 22px;
   color: #212529;
-  margin-bottom: 20px;
+  margin: 0;
 }
 
-.single-catigory:hover {
+.category-list .category-list-item:hover {
   -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.single-catigory:hover .single-catigory__title {
+.category-list .category-list-item:hover .title {
   color: #428bca;
 }
 
-.single-catigory:active {
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+.category-list .category-list-item:hover .img img {
+  transform: scale(1.1);
 }
+
+/* !END Category-List */
 
 .form__input-block {
   display: -webkit-box;
