@@ -1,6 +1,64 @@
 
 window.addEventListener("DOMContentLoaded", () => {
 
+  // Tabbable
+  const tabbable = () => {
+    const tabbs = document.querySelector('.tabbable');
+    const tabs = document.querySelectorAll('.tabs-link');
+    let content = document.querySelectorAll('.tabs-item');
+
+    function hideTabContent() {
+
+      content.forEach(item => {
+        item.style.display = 'none';
+      });
+      tabs.forEach(item => {
+        item.classList.remove('active');
+      });
+    }
+    function showTabContent(i = 0) {
+      content[i].style.display = 'block';
+      tabs[i].classList.add('active');
+    }
+
+    hideTabContent();
+    showTabContent();
+
+    tabbs.addEventListener('click', (e) => {
+      e.preventDefault();
+      const target = e.target;
+      if (target.classList.contains('tabs-link')) {
+
+        tabs.forEach((item, i) => {
+          if (target == item) {
+            hideTabContent();
+            showTabContent(i);
+          }
+
+        });
+      }
+    });
+  }
+
+  tabbable();
+
+
+  // Функция берет обьект по классу и обрезает его текст по условию
+  let cropText = function () {
+    const cropElement = document.querySelectorAll('.crop-text');
+    const size = 250;
+    const endCharacter = '....';
+    cropElement.forEach(item => {
+      let text = item.innerHTML;
+      if (item.innerHTML.length > size) {
+        text = text.substring(0, size);
+        item.innerHTML = text + endCharacter;
+      }
+    });
+
+  }
+  cropText()
+
   let filterAside = function () {
     let filterlist = document.querySelectorAll('.aside-filter__list');
     filterlist.forEach(item => {

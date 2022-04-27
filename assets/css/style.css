@@ -272,7 +272,7 @@ h6.strong {
   background: #fff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 
-  flex-basis:calc(25% - 30px);
+  flex-basis: calc(25% - 30px);
   margin: 15px;
   transition: .2s;
 }
@@ -287,7 +287,7 @@ h6.strong {
   overflow: hidden;
 }
 
-.category-list .category-list-item .img img{
+.category-list .category-list-item .img img {
   height: 100%;
   transition: .2s;
 }
@@ -312,6 +312,107 @@ h6.strong {
 }
 
 /* !END Category-List */
+
+/* !Info-Block */
+.inform-block {
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 15px;
+}
+
+.inform-block .title {
+  font-size: 22px;
+  max-width: 70%;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.inform-block .subtitle {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.inform-block .text {
+  max-width: 90%;
+  font-size: 16px;
+}
+
+/* !END Inform-Block */
+
+/* !Tabbable */
+.tabbable {
+  background: #eee;
+  border-bottom: solid 2px #d7d7d7;
+  padding-bottom: 20px;
+}
+
+.tabbable .tabs {
+  margin-bottom: 20px;
+  border-bottom: solid 2px #d7d7d7;
+  font-size: 0;
+}
+
+.tabbable .tabs .tabs-link {
+  display: inline-block;
+  font-size: 18px;
+  padding: 10px;
+  transition: .2s;
+  border-bottom: solid 1px transparent;
+  margin-bottom: -2px;
+}
+
+.tabbable .tabs .tabs-link:hover,
+.tabbable .tabs .tabs-link.active{
+  color: #000;
+
+}
+.tabbable .tabs .tabs-link.active{
+border-bottom: solid 2px #000;
+}
+.tabbable .tabs-items .tabs-item{
+  font-size: 16px;
+}
+.tabbable .tabs-items .tabs-item:not(:first-child) {
+  display: none;
+}
+/* !END Tabbable */
+
+/* !Article-Item */
+.article-item{
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 15px;
+  width: 100%;
+}
+.article-item .article-date{
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 8px;
+}
+.article-item .article-title{
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 10px;
+}
+.article-item .article-descriotion{
+  font-size: 16px;
+}
+/* !END Article-Item */
+
+/* !Article-List */
+.article-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.article-list .article-item{
+  margin: 15px;
+  flex-basis: calc(100% / 4 - 30px);
+}
+
+/* !END Article-List */
 
 .form__input-block {
   display: -webkit-box;
