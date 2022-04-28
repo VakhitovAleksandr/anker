@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Карзина</title>
+  <title>Оформить заказ</title>
 
   <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
 
@@ -173,53 +173,44 @@
 
 <div class="main">
   <div class="container">
-    <section class="cart">
-      <div class="cart-list">
-        <div class="product-cart">
-          <div class="img">
-            <img src="./assets/img/products/gaiki.jpg" alt="card-primary">
-          </div>
-          <div class="content">
-            <h3 class="title">ISO 1207 Винт Со Шлицем</h3>
-            <div class="price">200&#8381;</div>
-          </div>
-          <a href="cart.html#"><i class="fal fa-times"></i></a>
-        </div>
-        <div class="product-cart">
-          <div class="img">
-            <img src="./assets/img/products/gaiki.jpg" alt="card-primary">
-          </div>
-          <div class="content">
-            <h3 class="title">ISO 1207 Винт Со Шлицем</h3>
-            <div class="price">200&#8381;</div>
-          </div>
-          <a href="cart.html#"><i class="fal fa-times"></i></a>
-        </div>
-        <div class="product-cart">
-          <div class="img">
-            <img src="./assets/img/products/gaiki.jpg" alt="card-primary">
-          </div>
-          <div class="content">
-            <h3 class="title">ISO 1207 Винт Со Шлицем</h3>
-            <div class="price">200&#8381;</div>
-          </div>
-          <a href="cart.html#"><i class="fal fa-times"></i></a>
-        </div>
-        <div class="product-cart">
-          <div class="img">
-            <img src="./assets/img/products/gaiki.jpg" alt="card-primary">
-          </div>
-          <div class="content">
-            <h3 class="title">ISO 1207 Винт Со Шлицем</h3>
-            <div class="price">200&#8381;</div>
-          </div>
-          <a href="cart.html#"><i class="fal fa-times"></i></a>
-        </div>
+    <section class="ordering">
+
+      <div class="ordering-content">
+        <h2 class="title">Оформление заказа</h2>
+        <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <form class="check">
+          <input type="checkbox">
+          <label>
+            Согласие на обработку персональных данных
+          </label>
+        </form>
+        <form class="form">
+          <ul>
+            <li class="form-group">
+              <label>Введите Имя<span>*</span></label>
+              <input type="text" name="last" placeholder="" required="required">
+            </li>
+            <li class="form-group">
+              <label>Введите Телефон<span>*</span></label>
+              <input type="phone" name="phone" required="required">
+            </li>
+            <li class="form-group">
+              <label>Адрес Email<span>*</span></label>
+              <input type="email" name="email" required="required">
+            </li>
+            <li class="form-group">
+              <label>Комментарий к заказу</label>
+              <textarea name="comment" id="" cols="30" rows="10"></textarea>
+            </li>
+          </ul>
+          <button class="btn">Оформить заказ</button>
+        </form>
       </div>
+
       <div class="cart-aside">
         <form method="post" action="#">
           <input type="text" placeholder="Введите адрес">
-          <button class="btn" type="submit">Заказать</button>
+          <button class="btn">Подписаться</button>
         </form>
 
         <div class="cart-ammount">
@@ -231,7 +222,6 @@
             <li class="last">Итого к оплате<span>&#8381;260.00</span></li>
           </ul>
           <div class="buttons">
-            <a href="/checkout.html" class="btn">Оформить</a>
             <a href="/" class="btn">Продолжить покупки</a>
           </div>
         </div>
