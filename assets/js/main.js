@@ -273,6 +273,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const subMenu = () => {
     const menu = document.querySelector(".products-menu");
     const submenu = document.querySelector(".products-menu__sub-menu");
+    const submenuLink = document.querySelectorAll('.products-menu__link')
     submenuLink.forEach(item => {
       if (item.parentElement.closest('.products-menu__sub-menu')) {
         item.classList.remove('products-menu__link');
