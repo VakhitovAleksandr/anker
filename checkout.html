@@ -179,28 +179,26 @@
         <h2 class="title">Оформление заказа</h2>
         <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         <form class="check">
-          <input type="checkbox">
-          <label>
-            Согласие на обработку персональных данных
-          </label>
+          <input id="GET-check" type="checkbox">
+          <label for="GET-check">Согласие на обработку персональных данных</label>
         </form>
-        <form class="form">
+        <form class="form" method="post" action="#">
           <ul>
             <li class="form-group">
-              <label>Введите Имя<span>*</span></label>
-              <input type="text" name="last" placeholder="" required="required">
+              <label for="GET-name">Введите Имя<span>*</span></label>
+              <input type="text" id="GET-name" name="last" required="required">
             </li>
             <li class="form-group">
-              <label>Введите Телефон<span>*</span></label>
-              <input type="phone" name="phone" required="required">
+              <label for="GET-phone">Введите Телефон<span>*</span></label>
+              <input type="phone" id="GET-phone" name="phone" required="required">
             </li>
             <li class="form-group">
-              <label>Адрес Email<span>*</span></label>
-              <input type="email" name="email" required="required">
+              <label for="GET-email">Адрес Email<span>*</span></label>
+              <input type="email" id="GET-email" name="email" required="required">
             </li>
             <li class="form-group">
-              <label>Комментарий к заказу</label>
-              <textarea name="comment" id="" cols="30" rows="10"></textarea>
+              <label for="GET-mess">Комментарий к заказу</label>
+              <textarea name="comment" id="GET-mess" cols="30" rows="10"></textarea>
             </li>
           </ul>
           <button class="btn">Оформить заказ</button>

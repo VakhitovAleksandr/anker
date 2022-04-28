@@ -289,7 +289,6 @@ h6.strong {
 .ordering .check input{
   position: relative;
   margin-right: 10px;
-  top: -1px;
 }
 
 
@@ -425,6 +424,7 @@ h6.strong {
 .product-cart .title {
   font-size: 18px;
   font-weight: 700;
+  margin-right: 10px;
 }
 
 .product-cart .price {
@@ -437,6 +437,7 @@ h6.strong {
   right: 20px;
   top: 20px;
   font-size: 20px;
+
 }
 
 .product-cart a:hover {
