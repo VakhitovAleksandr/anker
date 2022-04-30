@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.bodyBg.active {
+.bodybg.active {
   position: fixed;
   left: 0;
   top: 0;
@@ -273,20 +273,22 @@ h6.strong {
 
 }
 
-.ordering .title{
+.ordering .title {
   font-size: 22px;
   color: #212529;
 }
-.ordering .subtitle{
+
+.ordering .subtitle {
   margin-bottom: 30px;
 }
 
-.ordering .check{
+.ordering .check {
   display: flex;
   align-items: center;
 
 }
-.ordering .check input{
+
+.ordering .check input {
   position: relative;
   margin-right: 10px;
 }
@@ -298,26 +300,31 @@ h6.strong {
   margin: 0 -12px;
   margin-top: 30px;
 }
-.ordering .form ul li:last-child{
+
+.ordering .form ul li:last-child {
   flex-basis: 100%;
 }
+
 .ordering .form .form-group {
   display: flex;
   flex-direction: column;
   flex-basis: 50%;
   padding: 0 12px;
 }
-.ordering .form .form-group label{
+
+.ordering .form .form-group label {
   margin-bottom: 10px;
   font-size: 14px;
   color: #333;
 }
-.ordering .form .form-group label span{
-    color: #ff2c18;
-    display: inline-block;
-    font-size: 16px;
-    margin-left: 5px;
+
+.ordering .form .form-group label span {
+  color: #ff2c18;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 5px;
 }
+
 .ordering .form .form-group input,
 .ordering .form .form-group textarea {
   margin-bottom: 30px;

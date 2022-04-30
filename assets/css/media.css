@@ -286,9 +286,11 @@
     flex-basis: 100%;
     margin-bottom: 30px;
   }
-.ordering .form .btn{
-  width: 100%;
-}
+
+  .ordering .form .btn {
+    width: 100%;
+  }
+
   .cart-aside {
     margin: 0;
   }
@@ -381,7 +383,8 @@
   }
 
   /* !.category-list */
-  .category-list .category-list-item {
+  .category-list .category-list-item,
+  .category-list .category-list-item.sub {
     flex-basis: calc(50% - 30px);
   }
 
@@ -490,7 +493,8 @@
   /* !END Article-List */
 
   /* .category-list */
-  .category-list .category-list-item {
+  .category-list .category-list-item,
+  .category-list .category-list-item.sub {
     flex-basis: 100%;
   }
 
