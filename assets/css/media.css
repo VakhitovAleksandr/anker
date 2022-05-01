@@ -479,6 +479,9 @@
 }
 
 @media (max-width: 575.98px) {
+  .card-primary-product__title {
+    font-size: 16px;
+  }
 
   /* !Article-List */
   .article-list {
@@ -580,9 +583,7 @@
 }
 
 @media (max-width: 424.98px) {
-  .card-primary-product__title {
-    font-size: 16px;
-  }
+
 
   /* card-product-view */
   .card-product-view__rating {
