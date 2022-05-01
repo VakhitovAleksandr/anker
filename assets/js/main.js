@@ -216,6 +216,7 @@ window.addEventListener("DOMContentLoaded", () => {
       formMiddle.classList.toggle('show');
     });
   }
+  menuMobile();
   const popupImages = () => {
 
     const popup = document.createElement('div');
@@ -319,7 +320,7 @@ window.addEventListener("DOMContentLoaded", () => {
   if (document.querySelector(".select")) {
     select();
   }
-  menuMobile();
+
   headerSticky();
 
   imgPopup();
