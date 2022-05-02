@@ -337,8 +337,10 @@ h6.strong {
   padding: 10px 12px;
   outline: none;
 }
-
-
+.ordering .form .form-group textarea{
+  height: 70px;
+}
+/* !cart */
 .cart {
   padding: 30px 0;
   display: flex;
@@ -376,7 +378,6 @@ h6.strong {
   background: #fff;
   border-radius: 15px;
   padding: 30px;
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -393,7 +394,41 @@ h6.strong {
   border-top: 1px solid #c8c8c8;
   font-weight: 600;
 }
+.counter {
+  display: flex;
+  align-items: center;
+}
+.counter .counter-minus{
+  display: block;
+}
 
+.counter .counter-input{
+    width: 42px;
+    height: 32px;
+    background-color: #fff;
+    border: 1px solid #999;
+    border-radius: 6px;
+    margin: 0 16px;
+    padding: 8px 5px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1;
+    outline: 0;
+}
+.counter .counter-btn{
+  width: 32px;
+  height: 32px;
+  box-shadow: 0 1px 4px #bfbfbf;
+  background-color: #428bca;
+  border-radius: 6px;
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+.counter .counter-btn:hover{
+  background-color: #3a57ac;
+}
 .cart-ammount ul li:not(:last-child) {
   margin-bottom: 10px;
 }
@@ -411,25 +446,33 @@ h6.strong {
 .product-cart {
   display: flex;
   align-items: center;
+  column-gap: 10px;
   flex: 0 0 auto;
   box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
   background: #fff;
   border-radius: 15px;
   overflow: hidden;
-  padding: 20px 20px;
+  padding: 20px 70px 20px 20px;
   margin-bottom: 30px;
   position: relative;
 
 }
 
 .product-cart .content {
-  flex: 1 0 auto;
+  flex-grow: 1;
   padding: 0 12px;
+  display: flex;
+  column-gap: 40px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .product-cart .img {
   width: 123px;
   padding: 0 12px;
+  flex: none;
 }
 
 .product-cart .title {
@@ -443,7 +486,7 @@ h6.strong {
   font-size: 16px;
 }
 
-.product-cart a {
+.product-cart>a {
   position: absolute;
   right: 20px;
   top: 20px;
@@ -451,7 +494,7 @@ h6.strong {
 
 }
 
-.product-cart a:hover {
+.product-cart>a:hover {
   color: #dc3545;
 }
 

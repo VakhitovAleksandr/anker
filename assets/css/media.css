@@ -583,7 +583,15 @@
 }
 
 @media (max-width: 424.98px) {
-
+/* product-cart */
+.product-cart{
+  flex-direction: column;
+  padding: 20px;
+  align-items: flex-start;
+}
+.product-cart .price{
+  margin-top: 10px;
+}
 
   /* card-product-view */
   .card-product-view__rating {
