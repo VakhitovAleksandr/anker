@@ -44,6 +44,24 @@ class Tabs {
 
 window.addEventListener("DOMContentLoaded", () => {
 
+  let viewMode = document.querySelectorAll('.view-mode__link');
+  let cardProductGrid = document.querySelectorAll('.card-product-grid');
+
+  viewMode.forEach(item => {
+    item.addEventListener('click', function () {
+      let type = this.getAttribute('data-type');
+      if (type = 'list') {
+        cardProductGrid.forEach(item => {
+          item.classList.add('card-product')
+        });
+      } else {
+        item.classList.remove('card-product')
+      }
+    });
+  })
+
+
+
   // Функция берет обьект по классу и обрезает его текст по условию
   let cropText = function () {
     const cropElement = document.querySelectorAll('.crop-text');
@@ -59,17 +77,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
   }
   cropText()
-
-
-
-
-
-
-
-
-
-
-
 
 
   let filterAside = function () {
