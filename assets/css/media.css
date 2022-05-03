@@ -1,5 +1,11 @@
 @media (max-width: 991.98px) {
 
+  /* slider-3 */
+  .slider-3 .slider__item {
+    max-width: 25%;
+    flex: 0 0 25%;
+  }
+
   /* advantage */
   .advantage__figure {
     width: 100%;
