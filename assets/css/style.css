@@ -1761,7 +1761,7 @@ body::-webkit-scrollbar-thumb {
   color: #50ad55;
 }
 
-.card-product {
+.card-product-list {
   background: #fff;
   flex-basis: 100%;
   padding: 30px 20px;
@@ -1775,53 +1775,53 @@ body::-webkit-scrollbar-thumb {
   color: #212529;
 }
 
-.card-product .img {
+.card-product-list .img {
   max-width: 185px;
 
 }
 
-.card-product .body {
+.card-product-list .body {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex: 1 1 auto;
 }
 
-.card-product .body .content {
+.card-product-list .body .content {
   max-width: 300px;
   flex-grow: 1;
 }
 
-.card-product .title {
+.card-product-list .title {
   font-size: 18px;
   margin-bottom: 5px;
 }
 
-.card-product .subtitle {
+.card-product-list .subtitle {
   font-size: 16px;
   margin-bottom: 5px;
 }
 
-.card-product .stars {
+.card-product-list .stars {
   margin-bottom: 5px;
 }
 
-.card-product .art {
+.card-product-list .art {
   font-size: 14px;
   color: #424646;
 }
 
-.card-product .price {
+.card-product-list .price {
   text-align: center;
 }
 
-.card-product .price .cost {
+.card-product-list .price .cost {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 5px;
 }
 
-.card-product .price .button {
+.card-product-list .price .button {
   border: none;
   display: inline-flex;
   align-items: center;
@@ -1832,20 +1832,20 @@ body::-webkit-scrollbar-thumb {
   color: #fff;
 }
 
-.card-product .price .cart {
+.card-product-list .price .cart {
   display: none;
 }
 
-.card-product .action {
+.card-product-list .action {
   align-self: stretch;
 }
 
-.card-product .action a {
+.card-product-list .action a {
   display: block;
   font-size: 20px;
 }
 
-.card-product .action a:hover {
+.card-product-list .action a:hover {
   color: #428bca;
 }
 

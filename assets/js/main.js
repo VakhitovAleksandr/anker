@@ -49,14 +49,15 @@ window.addEventListener("DOMContentLoaded", () => {
 
   viewMode.forEach(item => {
     item.addEventListener('click', function () {
+      viewMode.forEach(item => {
+        item.classList.remove('active');
+        this.classList.add('active');
+      })
       let type = this.getAttribute('data-type');
-      if (type = 'list') {
-        cardProductGrid.forEach(item => {
-          item.classList.add('card-product')
-        });
-      } else {
-        item.classList.remove('card-product')
-      }
+      cardProductGrid.forEach(item => {
+        item.className = '';
+        item.className = `card-product-${type}`
+      })
     });
   })
 
