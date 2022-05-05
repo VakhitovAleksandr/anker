@@ -15,6 +15,10 @@
     window.CustomEvent = CustomEvent;
 })();
 
+
+
+
+
 var WRAPPER_SELECTOR = '.slider__wrapper';
 var ITEMS_SELECTOR = '.slider__items';
 var ITEM_SELECTOR = '.slider__item';
@@ -519,3 +523,41 @@ ChiefSlider.prototype.moveTo = function (index) {
 ChiefSlider.prototype.refresh = function () {
     this._refresh();
 };
+// Инициализация слайдеров index.html
+
+window.addEventListener("DOMContentLoaded", () => {
+    const sliderMain = document.querySelector('.slider-main');
+    const sliderCategory = document.querySelector('.slider-category');
+    const sliderProduct = document.querySelector('.slider-product');
+    if (sliderMain) {
+
+        const slider = new ChiefSlider(sliderMain, {
+            loop: true,
+            autoplay: true,
+            interval: 5000,
+        });
+    }
+    if (sliderCategory) {
+        const slider = new ChiefSlider(sliderCategory, {
+            loop: true,
+            autoplay: true,
+            interval: 5000,
+        });
+    }
+    if (sliderProduct) {
+        const slider = new ChiefSlider(sliderProduct, {
+            loop: true,
+            autoplay: true,
+            interval: 5000,
+        });
+    }
+    const sl4 = document.querySelector('.slider-4');
+    if (sl4) {
+        const slider = new ChiefSlider(sl4, {
+            loop: true,
+            autoplay: true,
+            interval: 5000,
+        });
+    }
+})
+
