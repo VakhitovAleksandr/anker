@@ -1,60 +1,69 @@
 
 window.addEventListener("DOMContentLoaded", () => {
 
-  let viewMode = document.querySelectorAll('.view-mode__link');
-  let cardProductGrid = document.querySelectorAll('.card-product-grid');
-  viewMode.forEach(item => {
-    item.addEventListener('click', function () {
-      viewMode.forEach(item => {
-        item.classList.remove('active');
-        this.classList.add('active');
-      })
-      let type = this.getAttribute('data-type');
-      cardProductGrid.forEach(item => {
-        item.className = '';
-        item.className = `card-product-${type}`
-      })
-    });
-  })
+  // tooggleGridList Переключение карточек товаров GRID - LIST
 
-  // Функция берет обьект по классу и обрезает его текст по условию
+  const tooggleGridList = function () {
+    let viewMode = document.querySelectorAll('.view-mode__link');
+    let cardProductGrid = document.querySelectorAll('.card-product-grid');
+
+    viewMode.forEach(item => {
+      item.addEventListener('click', function () {
+        viewMode.forEach(item => {
+          item.classList.remove('active');
+          this.classList.add('active');
+        })
+        let type = this.getAttribute('data-type');
+        cardProductGrid.forEach(item => {
+          item.className = '';
+          item.className = `card-product-${type}`
+        })
+      });
+    })
+  }
+
+  tooggleGridList();
+
+
+  // cropText Обрека текста
+
   let cropText = function () {
     const cropElement = document.querySelectorAll('.crop-text');
-    const size = 250;
-    const endCharacter = '....';
-    cropElement.forEach(item => {
-      let text = item.innerHTML;
-      if (item.innerHTML.length > size) {
-        text = text.substring(0, size);
-        item.innerHTML = text + endCharacter;
-      }
-    });
-
+    if (cropElement) {
+      const size = 250;
+      const endCharacter = '....';
+      cropElement.forEach(item => {
+        let text = item.innerHTML;
+        if (item.innerHTML.length > size) {
+          text = text.substring(0, size);
+          item.innerHTML = text + endCharacter;
+        }
+      });
+    }
   }
   cropText()
 
+  // filterAside Фильт по нажатию создается атрибут data-value
 
   let filterAside = function () {
     let filterlist = document.querySelectorAll('.aside-filter__list');
-    filterlist.forEach(item => {
-      item.addEventListener('click', function (e) {
-        if (e.target.classList.contains('aside-filter__item')) {
-          e.target.classList.toggle('active');
-          if (e.target.classList.contains('active')) {
-            let value = e.target.innerText;
-            e.target.setAttribute('data-value', value);
-          } else {
-            e.target.removeAttribute('data-value');
+    if (filterlist) {
+      filterlist.forEach(item => {
+        item.addEventListener('click', function (e) {
+          if (e.target.classList.contains('aside-filter__item')) {
+            e.target.classList.toggle('active');
+            if (e.target.classList.contains('active')) {
+              let value = e.target.innerText;
+              e.target.setAttribute('data-value', value);
+            } else {
+              e.target.removeAttribute('data-value');
+            }
           }
-        }
+        });
       });
-    });
-
+    }
   }
-
-  if (document.querySelectorAll('.aside-filter__list')) {
-    filterAside();
-  }
+  filterAside();
 
   const formPopup = () => {
     const formPopup = document.querySelector(".form-popup");
@@ -86,6 +95,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     hideFormPopup();
   };
+
   const headerSticky = () => {
     let middleBar = document.querySelector(".middle-bar");
     let header = document.querySelector(".header");
@@ -104,6 +114,7 @@ window.addEventListener("DOMContentLoaded", () => {
       }
     });
   };
+
   const imgPopup = () => {
     const popup = document.createElement("div");
     const imgBig = document.createElement("img");
@@ -178,6 +189,7 @@ window.addEventListener("DOMContentLoaded", () => {
       formMiddle.classList.toggle('show');
     });
   }
+
   menuMobile();
   const popupImages = () => {
 
@@ -233,6 +245,7 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
   }
+
   const subMenu = () => {
     const menu = document.querySelector(".products-menu");
     const submenu = document.querySelector(".products-menu__sub-menu");
