@@ -2234,6 +2234,7 @@ body::-webkit-scrollbar-thumb {
 
 .crad-info__link i {
   font-size: 18px;
+  margin: 0;
   margin-left: 20px;
 }
 

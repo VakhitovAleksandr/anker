@@ -1,7 +1,8 @@
 @media (max-width: 991.98px) {
 
   /* slider-3 */
-  .slider-3 .slider__item {
+  .slider-product .slider__item, 
+  .slider-4 .slider__item {
     max-width: 25%;
     flex: 0 0 25%;
   }
@@ -42,6 +43,7 @@
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: 100;
   }
 
   .card-product__img {
@@ -83,6 +85,7 @@
     display: none;
   }
 
+  
   .footer__inner>*:nth-child(1) b {
     text-align: left;
   }
@@ -285,7 +288,7 @@
 @media (max-width: 767.98px) {
 
 
-  .slider-2 .card-primary__img {
+  .slider-category .card-primary__img {
     width: 60%;
   }
 
@@ -387,14 +390,6 @@
     margin: 0;
   }
 
-  .slider-2 .slider__item,
-  .slider-4 .slider__item {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    padding: 15px;
-  }
-
   .ticker {
     display: none;
   }
@@ -464,38 +459,41 @@
     width: calc(100% - 30px);
   }
 
-  .slider-2 {
+  .slider-category {
     position: relative;
   }
 
-  .slider-2 .slider__items {
+  .slider-category .slider__items {
     width: 100%;
   }
 
-  .slider-2 .slider__item {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
+  .slider-category .slider__item,
+  .slider-product .slider__item,
+  .slider-4 .slider__item {
+    flex: 0 0 50%;
+    max-width: 50%;
   }
 
-  .slider-3 {
+  .slider-product {
     position: relative;
   }
 
-  .slider-3 .slider__items {
+  .slider-product .slider__items {
     width: 100%;
   }
+  
 
-  .slider-3 .slider__item {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
 }
 
 @media (max-width: 575.98px) {
+
+  .slider-category .slider__item,
+  .slider-product .slider__item,
+  .slider-4 .slider__item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
   .card-primary-product__title {
     font-size: 16px;
   }
@@ -527,37 +525,39 @@
     max-width: calc(100% - 15px);
     flex-basis: 100%;
   }
-
-  .card-product {
+ 
+  .card-product-list {
     flex-direction: column;
   }
 
-  .card-product .body {
-    flex-wrap: wrap;
+  .card-product-list .body {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .card-product .img {
+  .card-product-list .img {
     max-width: 100%;
   }
 
-  .card-product .img img {
+  .card-product-list .img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 
-  .card-product .price {
+  .card-product-list .price {
     text-align: start;
     margin-top: 20px;
+    margin-bottom: 20px;
   }
 
-  .card-product .action {
+  .card-product-list .action {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
   }
 
-  .card-product .content {
+  .card-product-list .content {
     flex-basis: 100%;
   }
 
